@@ -24,9 +24,6 @@ jobs:
 
       - name: Generate output files
         run: |
-          cd subprogram
-          python subprogram.py
-          cd ..
           python program.py
 
       - name: Create Pull Request

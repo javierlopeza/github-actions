@@ -1,5 +1,6 @@
-with open("./subprogram/demo.txt", "r") as f:
-    today = f.readline()
+import pendulum
+
+today = pendulum.now("America/Santiago").format("YYYY-MM-DD HH:mm:ss")
 
 with open("./final.txt", "a") as f:
-    f.write("\n--- {} ---".format(today))
+    f.write("--- {} ---\n".format(today))
